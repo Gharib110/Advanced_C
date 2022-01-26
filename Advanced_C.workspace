@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Advanced_C" Database="" Version="10000">
+  <Project Name="pthread_struct" Path="pthread_struct/pthread_struct.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment/>
+      <Project Name="pthread_struct" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="pthread_struct" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

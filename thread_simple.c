@@ -16,7 +16,7 @@ int main() {
     pthread_create(&th, NULL, hello_fun, NULL);
     printf("Hello, %d\n", 10);
 
-    sleep(1);
+    sleep(2);
 
     pthread_join(th, NULL); // It is important to avoid exit
     pthread_exit(NULL);
