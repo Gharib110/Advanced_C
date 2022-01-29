@@ -2,17 +2,20 @@
 <CodeLite_Workspace Name="Advanced_C" Database="" Version="10000">
   <Project Name="pthread_struct" Path="pthread_struct/pthread_struct.project" Active="No"/>
   <Project Name="pthread_struct_malloc" Path="pthread_struct_malloc/pthread_struct_malloc.project" Active="No"/>
-  <Project Name="pthread_return_func" Path="pthread_return_func/pthread_return_func.project" Active="Yes"/>
+  <Project Name="pthread_return_func" Path="pthread_return_func/pthread_return_func.project" Active="No"/>
+  <Project Name="pthread_detached_th" Path="pthread_detached_th/pthread_detached_th.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="no">
       <Environment/>
       <Project Name="pthread_struct" ConfigName="Debug"/>
       <Project Name="pthread_struct_malloc" ConfigName="Debug"/>
       <Project Name="pthread_return_func" ConfigName="Debug"/>
+      <Project Name="pthread_detached_th" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
-      <Project Name="pthread_return_func" ConfigName="Debug"/>
+      <Project Name="pthread_detached_th" ConfigName="Release"/>
+      <Project Name="pthread_return_func" ConfigName="Release"/>
       <Project Name="pthread_struct" ConfigName="Release"/>
       <Project Name="pthread_struct_malloc" ConfigName="Release"/>
     </WorkspaceConfiguration>
