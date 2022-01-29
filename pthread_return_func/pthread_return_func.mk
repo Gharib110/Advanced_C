@@ -2,14 +2,14 @@
 ## Auto Generated makefile by CodeLite IDE
 ## any manual changes will be erased      
 ##
-## Release
-ProjectName            :=pthread_struct
+## Debug
+ProjectName            :=pthread_return_func
 ConfigurationName      :=Release
 WorkspaceConfiguration := $(ConfigurationName)
 WorkspacePath          :=D:/Alireza/ClionProjects/Advanced_C
-ProjectPath            :=D:/Alireza/ClionProjects/Advanced_C/pthread_struct
-IntermediateDirectory  :=../build-$(ConfigurationName)/pthread_struct
-OutDir                 :=../build-$(ConfigurationName)/pthread_struct
+ProjectPath            :=D:/Alireza/ClionProjects/Advanced_C/pthread_return_func
+IntermediateDirectory  :=../build-$(ConfigurationName)/pthread_return_func
+OutDir                 :=../build-$(ConfigurationName)/pthread_return_func
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
@@ -29,7 +29,7 @@ LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
 OutputFile             :=..\build-$(ConfigurationName)\bin\$(ProjectName)
-Preprocessors          :=$(PreprocessorSwitch)NDEBUG 
+Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
@@ -52,8 +52,8 @@ LibPath                := $(LibraryPathSwitch).
 AR       := D:/CodeBlocks/MinGW/bin/ar.exe rcu
 CXX      := D:/CodeBlocks/MinGW/bin/g++.exe
 CC       := D:/CodeBlocks/MinGW/bin/gcc.exe
-CXXFLAGS :=  -O2 -Wall $(Preprocessors)
-CFLAGS   :=  -O2 -Wall $(Preprocessors)
+CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
+CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := D:/CodeBlocks/MinGW/bin/as.exe
 
@@ -62,7 +62,7 @@ AS       := D:/CodeBlocks/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=D:\CodeLite
-Objects0=../build-$(ConfigurationName)/pthread_struct/main.c$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/pthread_return_func/main.c$(ObjectSuffix) 
 
 
 
@@ -74,18 +74,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): ../build-$(ConfigurationName)/pthread_struct/.d $(Objects) 
-	@if not exist "..\build-$(ConfigurationName)\pthread_struct" mkdir "..\build-$(ConfigurationName)\pthread_struct"
+$(OutputFile): ../build-$(ConfigurationName)/pthread_return_func/.d $(Objects) 
+	@if not exist "..\build-$(ConfigurationName)\pthread_return_func" mkdir "..\build-$(ConfigurationName)\pthread_return_func"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@if not exist "..\build-$(ConfigurationName)\pthread_struct" mkdir "..\build-$(ConfigurationName)\pthread_struct"
+	@if not exist "..\build-$(ConfigurationName)\pthread_return_func" mkdir "..\build-$(ConfigurationName)\pthread_return_func"
 	@if not exist ""..\build-$(ConfigurationName)\bin"" mkdir ""..\build-$(ConfigurationName)\bin""
 
-../build-$(ConfigurationName)/pthread_struct/.d:
-	@if not exist "..\build-$(ConfigurationName)\pthread_struct" mkdir "..\build-$(ConfigurationName)\pthread_struct"
+../build-$(ConfigurationName)/pthread_return_func/.d:
+	@if not exist "..\build-$(ConfigurationName)\pthread_return_func" mkdir "..\build-$(ConfigurationName)\pthread_return_func"
 
 PreBuild:
 
@@ -93,16 +93,16 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/pthread_struct/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/pthread_struct/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "D:/Alireza/ClionProjects/Advanced_C/pthread_struct/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/pthread_struct/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/pthread_struct/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/pthread_struct/main.c$(DependSuffix) -MM main.c
+../build-$(ConfigurationName)/pthread_return_func/main.c$(ObjectSuffix): main.c ../build-$(ConfigurationName)/pthread_return_func/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "D:/Alireza/ClionProjects/Advanced_C/pthread_return_func/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/pthread_return_func/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/pthread_return_func/main.c$(ObjectSuffix) -MF../build-$(ConfigurationName)/pthread_return_func/main.c$(DependSuffix) -MM main.c
 
-../build-$(ConfigurationName)/pthread_struct/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/pthread_struct/main.c$(PreprocessSuffix) main.c
+../build-$(ConfigurationName)/pthread_return_func/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/pthread_return_func/main.c$(PreprocessSuffix) main.c
 
 
--include ../build-$(ConfigurationName)/pthread_struct//*$(DependSuffix)
+-include ../build-$(ConfigurationName)/pthread_return_func//*$(DependSuffix)
 ##
 ## Clean
 ##
