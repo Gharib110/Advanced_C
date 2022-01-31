@@ -23,9 +23,9 @@ int main() {
 	struct Adapter *data;
 	data = malloc(sizeof(char) * 255 + sizeof(int) * 2);
 	//data.msg = malloc(sizeof(char) * 255);
-	data.msg = "Hello World !";
-	data.sum = 999;
-	data.thread_id = 2;
+	data->msg = "Hello World !";
+	data->sum = 999;
+	data->thread_id = 2;
 	
 	pthread_t th1_id = pthread_create(&th1, NULL, print_adapter, (void*) data);
 	printf("Thread %d was returned.\n", th1_id);

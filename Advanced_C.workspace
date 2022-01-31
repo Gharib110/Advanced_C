@@ -3,7 +3,9 @@
   <Project Name="pthread_struct" Path="pthread_struct/pthread_struct.project" Active="No"/>
   <Project Name="pthread_struct_malloc" Path="pthread_struct_malloc/pthread_struct_malloc.project" Active="No"/>
   <Project Name="pthread_return_func" Path="pthread_return_func/pthread_return_func.project" Active="No"/>
-  <Project Name="pthread_detached_th" Path="pthread_detached_th/pthread_detached_th.project" Active="Yes"/>
+  <Project Name="pthread_detached_th" Path="pthread_detached_th/pthread_detached_th.project" Active="No"/>
+  <Project Name="pointer_manipulation" Path="pointer_manipulation/pointer_manipulation.project" Active="No"/>
+  <Project Name="pthread_once" Path="pthread_once/pthread_once.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="no">
       <Environment/>
@@ -11,6 +13,8 @@
       <Project Name="pthread_struct_malloc" ConfigName="Debug"/>
       <Project Name="pthread_return_func" ConfigName="Debug"/>
       <Project Name="pthread_detached_th" ConfigName="Debug"/>
+      <Project Name="pointer_manipulation" ConfigName="Debug"/>
+      <Project Name="pthread_once" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -18,6 +22,8 @@
       <Project Name="pthread_return_func" ConfigName="Release"/>
       <Project Name="pthread_struct" ConfigName="Release"/>
       <Project Name="pthread_struct_malloc" ConfigName="Release"/>
+      <Project Name="pointer_manipulation" ConfigName="Release"/>
+      <Project Name="pthread_once" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
