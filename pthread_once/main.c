@@ -16,7 +16,7 @@ void* init_routine_t(void* param) {
 
 void* th1_func(void* param) {
 	sleep(1);
-	pthread_once(once_control, init_routine_t);
+	int status = pthread_once(&once_control, init_routine_t);
 	if (status == 1) {
 		printf("This thread called it %d\n", pthread_self());
 	}
@@ -25,7 +25,7 @@ void* th1_func(void* param) {
 
 void* th2_func(void* param) {
 	sleep(2);
-	int status = pthread_once(once_control, init_routine_t);
+	int status = pthread_once(&once_control, init_routine_t);
 	if (status == 1) {
 		printf("This thread called it %d\n", pthread_self());
 	}
@@ -40,6 +40,8 @@ int main(int argc, char **argv)
 
 	pthread_join(th1, NULL);
 	pthread_join(th2, NULL);
+	
+	printf("End ...\n");
 
 	return 0;
 }
